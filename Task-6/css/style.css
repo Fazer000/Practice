@@ -1,0 +1,280 @@
+@font-face {
+	font-family: "MontserratAlternates";
+	src: url(/fonts/bankgothicmdbt_medium.otf);
+}
+@font-face {
+	font-family: "MontserratAlternates";
+	src: url(/fonts/bankgothicmdbt_medium.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "MontserratAlternates";
+	color: #000;
+	font-size: 18px;
+}
+
+html, body {
+
+	background-color: #F2F4F6;
+	background-image: url(../img/5559852.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.header {
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.header_title {
+	font-size: 34px;
+	font-family: "MontserratAlternates";
+	color: #fff;
+}
+
+.main {
+	width: 100%;
+
+	max-width: 850px;
+	margin: auto;
+	padding: 20px 10px;
+	margin-top: 70px;
+	display: flex;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.61);   
+	backdrop-filter: blur(5px);
+}
+
+
+.container_auth {
+	width: 100%;
+	max-width: 450px;
+	min-height: 355px;
+	margin: 10% auto;
+	padding: 20px 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.61);   
+	backdrop-filter: blur(5px);
+}
+
+.container_title {
+	text-align: center;
+	font-size: 34px;
+	font-family: "MontserratAlternates";
+	margin: 10px 0px;
+	color: #fff;
+}
+
+.auth_form {
+	max-width: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+.form_item {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.form_text
+{
+	color: #fff;
+}
+.form_item > input {
+	max-width: 100%;
+	width: 350px;
+	min-height: 30px;
+	border-radius: 10px;
+	padding: 7px;
+	border: 1px solid rgba(0, 0, 0, 0.13);
+	background-color: rgb(26, 25, 25);
+	color: aqua;
+}
+
+.form_item > input::placeholder 
+{
+	color: aqua;
+}
+
+.form_reg_text {
+	text-align: center;
+	font-size: 16px;
+}
+
+.text_error {
+	text-align: center;
+	color: #E75555;
+	margin: 10px 0px 0px 0px;
+}
+
+.text_mess {
+	text-align: center;
+	color: #008000;
+	margin: 10px 0px 0px 0px;
+}
+.text_center {
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+	color: #fff;
+}
+
+.auth_sub {
+	background-color: #000;
+	color: #fff;
+	margin: 15px 0px;
+	cursor: pointer;
+	font-family: "MontserratAlternates";
+	font-size: 20px;
+}
+
+.auth_sub:hover {
+	background-color: #fff;
+	color: #000;
+	margin: 15px 0px;
+}
+
+.container {
+	max-width: 750px;
+	width: 100%;
+	margin: 40px;
+
+}
+
+.tasklist_add {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.tasklist_add_block {
+	display: flex;
+	gap: 15px;
+	justify-content: space-evenly;
+}
+
+.add_text {
+	max-width: 100%;
+	width: 100%;
+	min-height: 30px;
+	border-radius: 10px;
+	padding: 7px;
+	border: 1px solid rgba(0,0,0,.13);
+	background-color: rgb(26, 25, 25);
+}
+
+.add_text::placeholder
+{
+	color: aqua;
+}
+
+.add_sub {
+	padding: 5px 15px;
+	max-width: 200px;
+	width: 100%;
+	min-height: 30px;
+	background-color: aqua;
+	color: #fff;
+	cursor: pointer;
+	font-family: "MontserratAlternates";
+	font-size: 20px;
+	border-radius: 10px;
+	border: 1px solid aqua;
+}
+
+.add_sub:hover {
+	background-color: #fff;
+	color: aqua;
+}
+
+.tasklist_btn {
+	min-height: 30px;
+	padding: 5px 15px;
+	color: aqua;
+	background-color: rgb(26, 25, 25);
+	cursor: pointer;
+	font-family: "MontserratAlternates";
+	font-size: 20px;
+	border-radius: 10px;
+	border: 1px solid aqua(0,0,0,.13);
+	width: 100%;
+	text-align: center;
+}
+
+.tasklist_btn:hover {
+	background-color: #ffffff;
+	color: aqua;
+}
+
+.tasklist_items {
+	margin: 40px 0px;
+	display: flex;
+	gap: 50px;
+	border-left: 5px solid rgba(0,0,0,.13);
+}
+
+.tasklist_item {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.tasklist_item_text {
+	font-family: "MontserratAlternates";
+	color: rgb(255, 255, 255);
+}
+
+.tasklist_item_btn {
+	display: flex;
+	gap: 15px;
+}
+
+.tasklist_status_img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 50px;
+	max-height: 100%;
+	margin-top: 28px;
+}
+
+.tasklist_status_img > img {
+	width: 50px;
+	height: 50px;
+}
+
+.list_name-text
+{
+	color: #fff;
+	font-size: 34px;
+	justify-content: center;
+	display: flex;
+	margin-top: -50px;
+	padding: 30px;
+}
